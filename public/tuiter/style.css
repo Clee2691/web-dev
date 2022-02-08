@@ -144,3 +144,7 @@ body {
 .wd-topic-gray {
     color:rgb(110, 118, 125);
 }
+
+.wd-dots-right {
+    float:right;
+}
