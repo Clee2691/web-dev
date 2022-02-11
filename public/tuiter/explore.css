@@ -1,149 +1,98 @@
 body {
-    background-color: black;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
-.wd-search-bar-div {
-    margin-left: 16px;
-    margin-right: 12px;
-
-    padding-left: 16px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 54px;
-
-    border: 1px solid rgb(47, 51, 54);
-    border-top: 0px;
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
 }
 
-.wd-search-input-div {
-    background-color: rgb(33, 35, 39);
-    border-radius: 20px;
-    color: white;
-    font-size: small;
-    width: 86%;
-    padding-left: 20px;
-    display: inline-block;
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .follow-group-right {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    .sm-word-gone {
+        font-size: 0;
+    }
+
+    .left-nav-icon {
+        font-size: initial;
+    }
+
+    .follow-group-right {
+        display: none;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+}
+
+.circle-ellipsis{
+    font-size: 0.5em;
+    padding-left: 0.1em;
+}
+
+.btn-tuit {
+    border-radius: 2em;
+    margin-top: 0.5em;
+}
+
+.search-bar-group {
+    position:relative;
+    display: inline;
+}
+
+.search-bar-group .fa-search {
+    position: absolute;
+    top: 0.7em;
+    left: 1.0em;
+}
+
+.search-bar-group .search-input {
+    text-indent: 2em;
+    border-radius: 2em;
+    margin-right:2em;
+}
+
+.cog-icon {
+    font-size: 28px;
+    color: #0c6dfd;
 
 }
 
-.wd-search-input {
-    border: none;
-    background-color: rgba(33, 35, 39, 0);
-    color: white;
-    width: 90%;
-    padding: 12px;
-    border-radius: 20px;
+.avatar-images {
+    height: 48px;
+    width: 48px;
+    border-radius: 2em;
 }
 
-.wd-search-input:focus {
-    outline: none;
-}
-
-.wd-gear-icon {
-    color: #1d96e0;
-    font-size: xx-large;
-    float: right;
-    position: relative;
-    bottom: 5px;
-}
-
-.wd-gear-icon>a {
-    text-decoration: none;
-}
-
-.wd-row {
-    clear: both;
-}
-
-.wd-row>div>button {
-    margin-left: 0px;
-    padding: 16px 0px;
-    background: none;
-    border: none;
-    font-size: 15px;
+.follow-list-group-item {
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
     font-weight: bolder;
-    color: rgb(110, 118, 125);
 }
 
-.wd-row>div>button.wd-first-link {
-    color: rgb(29, 161, 242);
-    border-bottom: 4px solid rgb(29, 161, 242);
+.follow-name-handle {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-weight: bolder;
 }
 
-.wd-col {
-    width: 16.66%;
-    float: left;
+.page-handle {
+    font-weight: normal;
 }
 
-.wd-gray-break {
-    height: 13px;
-    margin-left: 16px;
-    margin-right: 12px;
-    background-color: #212327;
-    border: 1px solid rgb(47, 51, 54);
+.btn-follow {
+    border-radius: 2em;
 }
 
-.wd-suggested-post {
-    margin-left: 16px;
-    margin-right: 12px;
-
-    padding: 16px 16px;
-    border: 1px solid rgb(47, 51, 54);
-}
-
-.wd-suggested-post>div {
-    padding-bottom: 5px;
-}
-
-.wd-suggested-topic {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
-
-.wd-suggested-title {
-    color: white;
-    font-size: large;
-}
-
-.wd-suggested-topic-name {
-    color: white;
-    margin-bottom: 4px;
-}
-
-.wd-date-color {
-    color: rgb(110, 118, 125);
-}
-
-.wd-story-picture {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-}
-
-.wd-col-post {
-    width: 80%;
-    float: left;
-}
-
-.wd-col-post-img {
-    float: right;
-}
-
-.wd-suggested-post-image {
-    margin-left: 16px;
-    margin-right: 12px;
-
-    padding: 16px 16px;
-    padding-bottom: 116px;
-    border: 1px solid rgb(47, 51, 54);
-}
-
-.wd-topic-gray {
-    color: rgb(110, 118, 125);
-}
-
-.wd-dots-right {
-    float: right;
-    color: #1d9dea;
-}
