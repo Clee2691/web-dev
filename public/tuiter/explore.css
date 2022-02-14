@@ -1,3 +1,16 @@
+body {
+    background-color: black;
+}
+
+i {
+    color: #d8d8d8;
+}
+
+.list-group-item {
+    color: #d8d8d8;
+    background-color: black;
+}
+
 .circle-ellipsis{
     font-size: 0.5em;
     padding-left: 0.1em;
@@ -5,21 +18,24 @@
 
 .btn-tuit {
     border-radius: 2em;
+    background-color: #1e9bf0;
 }
 
 .search-bar-group > .fa-search {
     top: 0.7em;
     left: 1.0em;
+    color: #545b62;
 }
 
 .search-bar-group > .search-input {
     text-indent: 2em;
     border-radius: 2em;
+    background-color: #212327;
 }
 
 .cog-icon {
-    font-size: 28px;
-    color: #0c6dfd;
+    font-size: 1.75em;
+    color: white;
 }
 
 .avatar-images {
@@ -43,4 +59,27 @@
     max-height: 6em;
     border-radius: 1em;
     min-height: 0;
+}
+
+#follow-box-right > .list-group-item {
+    background-color: #16181c;
+}
+
+.btn-follow {
+    background-color: white;
+    color: black;
+}
+
+.nav-link {
+    color:#545b62;
+    background-color: black;
+}
+
+.active-tab {
+    border-bottom: 0.25em solid #1d98ec !important;
+    color: white;
+}
+
+.border-color-gray {
+    border-color: #25272a !important;
 }

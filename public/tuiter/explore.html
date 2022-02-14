@@ -19,58 +19,58 @@
         <div class="row justify-content-center">
             <!-- Navigation Side Bar -->
             <div class="col col-sm-auto col-md-auto col-lg-auto ">
-                <div class="list-group list-group-item-action">
+                <div class="list-group">
                     <a href="index.html" class="list-group-item">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span><i class="fas fa-home left-nav-icon"></i>
+                        <span><i class="fa-inverse fas fa-home"></i>
                             <span class="d-none d-xl-inline">
                                 Home</span></span>
                     </a>
-                    <a href="explore.html" class="list-group-item active">
-                        <span><i class="fas fa-hashtag left-nav-icon"></i>
+                    <a href="explore.html" class="list-group-item fw-bold">
+                        <span><i class="fas fa-hashtag"></i>
                             <span class="d-none d-xl-inline">
                                 Explore</span></span>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span><i class="fas fa-bell left-nav-icon"></i> <span
+                        <span><i class="fas fa-bell"></i> <span
                                 class="d-none d-xl-inline">Notifications</span></span>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span><i class="fas fa-envelope left-nav-icon"></i>
+                        <span><i class="fas fa-envelope"></i>
                             <span class="d-none d-xl-inline">Messages</span> 
                         </span>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span><i class="fas fa-bookmark left-nav-icon"></i> <span
+                        <span><i class="fas fa-bookmark"></i> <span
                                 class="d-none d-xl-inline">Bookmarks</span> </span>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span><i class="fas fa-list left-nav-icon"></i> <span
+                        <span><i class="fas fa-list"></i> <span
                                 class="d-none d-xl-inline">Lists</span></span>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span><i class="fas fa-user left-nav-icon"></i>
+                        <span><i class="fas fa-user"></i>
                             <span class="d-none d-xl-inline">Profile</span>
                         </span>
                     </a>
                     <a href="index.html" class="list-group-item">
-                        <span class="fa-stack circle-ellipsis left-nav-icon">
+                        <span class="fa-stack circle-ellipsis">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
                         </span><span class="d-none d-xl-inline"> More</span>
                     </a>
-                    <button class="btn btn-primary btn-tuit mt-2">Tuit</button>
+                    <button class="btn btn-primary btn-tuit mt-2 fw-bolder">Tuit</button>
                 </div>
             </div>
 
             <!-- Main feed of the explore page -->
-            <div class="col">
-                <div class="d-flex flex-row">
+            <div class="col p-0 border-start border-end border-1 border-color-gray">
+                <div class="d-flex flex-row ms-3 me-3">
                     <div class="d-flex search-bar-group d-inline position-relative flex-grow-1">
                         <span class="fa fa-search position-absolute"></span>
-                        <input type="text" class="form-control search-input me-4" placeholder="Search Tuiter" />
+                        <input type="text" class="form-control search-input me-4 border-0" placeholder="Search Tuiter" />
                     </div>
                     <div class="d-flex align-items-center justify-content-end ms-auto">
                         <a href="explore-settings.html">
@@ -79,31 +79,30 @@
                     </div>
                 </div>
 
-                <div class="mt-3">
-                    <ul class="nav nav-tabs">
+                <div class="mt-2 ms-2 me-2">
+                    <ul class="nav nav-tabs border-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="for-you.html">For you</a>
+                            <a class="active-tab nav-link fw-bold" href="for-you.html">For you</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="trending.html">Trending</a>
+                            <a class="nav-link fw-bold" href="trending.html">Trending</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="news.html">News</a>
+                            <a class="nav-link fw-bold" href="news.html">News</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="sports.html">Sports</a>
+                            <a class="nav-link fw-bold" href="sports.html">Sports</a>
                         </li>
                         <li class="d-none d-md-block">
-                            <a class="nav-link" href="entertainment.html">Entertainment</a>
+                            <a class="nav-link fw-bold" href="entertainment.html">Entertainment</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="mt-2 position-relative">
-                    <img class="img-fluid" src="./images/spacexship.jpg">
+                <div class="position-relative">
+                    <img class="img-fluid border border-1 border-color-gray" src="./images/spacexship.jpg">
                     <span class="h2 image-text-overlay position-absolute fw-bold">SpaceX's Starship</span>
                 </div>
-            
                 <div class="list-group mb-3">
                     <div class="list-group-item d-flex justify-content-between">
                         <div class="d-flex flex-column">
@@ -184,89 +183,89 @@
 
             <!-- Follow box on the right side -->
             <div class="col col-lg-auto col-xxl-4 d-none d-lg-block">
-                <div class="list-group">
-                    <li class="list-group-item fw-bold">Who to follow</li>
-                    <div class="list-group-item">
+                <div id="follow-box-right" class="list-group">
+                    <li class="list-group-item border-0 fw-bold">Who to follow</li>
+                    <div class="list-group-item border-0">
                         <div class="d-flex flex-row justify-content-start">
                             <div>
                                 <img class="avatar-images" src="./images/java.png">
                             </div>
                             <div class="ms-2 me-2 fw-bold">
                                 Java <span class="fas fa-check-circle"></span><br>
-                                <div class="fw-normal">
+                                <div class="fw-normal text-muted">
                                     @Java
                                 </div>
                             </div>
                             <div class="d-flex align-items-center ms-auto">
-                                <button class="btn btn-primary btn-follow">Follow</button>
+                                <button class="btn btn-primary btn-follow fw-bold border-0">Follow</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item border-0">
                         <div class="d-flex flex-row justify-content-start">
                             <div>
                                 <img class="avatar-images" src="./images/relativity.png">
                             </div>
                             <div class="ms-2 me-2 fw-bold">
                                 Relativity Space <span class="fas fa-check-circle"></span><br>
-                                <div class="fw-normal">
+                                <div class="fw-normal text-muted">
                                     @relativityspace
                                 </div>
                             </div>
                             <div class="d-flex align-items-center ms-auto">
-                                <button class="btn btn-primary btn-follow">Follow</button>
+                                <button class="btn btn-primary btn-follow fw-bold border-0">Follow</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item border-0">
                         <div class="d-flex flex-row justify-content-start">
                             <div>
                                 <img class="avatar-images" src="./images/virgin.png">
                             </div>
                             <div class="ms-2 me-2 fw-bold">
                                 Virgin Galactic <span class="fas fa-check-circle"></span><br>
-                                <div class="fw-normal">
+                                <div class="fw-normal text-muted">
                                     @virgingalactic
                                 </div>
                             </div>
                             <div class="d-flex align-items-center ms-auto">
-                                <button class="btn btn-primary btn-follow">Follow</button>
+                                <button class="btn btn-primary btn-follow fw-bold border-0">Follow</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item border-0">
                         <div class="d-flex flex-row justify-content-start">
                             <div>
                                 <img class="avatar-images" src="./images/nasa.jpg">
                             </div>
                             <div class="ms-2 me-2 fw-bold">
                                 NASA <span class="fas fa-check-circle"></span><br>
-                                <div class="fw-normal">
+                                <div class="fw-normal text-muted">
                                     @NASA
                                 </div>
                             </div>
                             <div class="d-flex align-items-center ms-auto">
-                                <button class="btn btn-primary btn-follow">Follow</button>
+                                <button class="btn btn-primary btn-follow fw-bold border-0">Follow</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="list-group-item">
+                    <div class="list-group-item border-0">
                         <div class="d-flex flex-row justify-content-start">
                             <div>
                                 <img class="avatar-images" src="./images/tesla.png">
                             </div>
                             <div class="ms-2 me-2 fw-bold">
                                 Tesla <span class="fas fa-check-circle"></span><br>
-                                <div class="page-handle">
+                                <div class="fw-normal text-muted">
                                     @Tesla
                                 </div>
                             </div>
                             <div class="d-flex align-items-center ms-auto">
-                                <button class="btn btn-primary btn-follow">Follow</button>
+                                <button class="btn btn-primary btn-follow fw-bold border-0">Follow</button>
                             </div>
                         </div>
                     </div>
