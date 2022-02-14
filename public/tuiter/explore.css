@@ -1,42 +1,3 @@
-body {
-    margin-top: 10px;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    .follow-group-right {
-        display: none;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-
-    .sm-word-gone {
-        font-size: 0;
-    }
-
-    .left-nav-icon {
-        font-size: initial;
-    }
-
-    .follow-group-right {
-        display: none;
-    }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (max-width: 1400px) {
-}
-
 .circle-ellipsis{
     font-size: 0.5em;
     padding-left: 0.1em;
@@ -44,30 +5,21 @@ body {
 
 .btn-tuit {
     border-radius: 2em;
-    margin-top: 0.5em;
 }
 
-.search-bar-group {
-    position:relative;
-    display: inline;
-}
-
-.search-bar-group .fa-search {
-    position: absolute;
+.search-bar-group > .fa-search {
     top: 0.7em;
     left: 1.0em;
 }
 
-.search-bar-group .search-input {
+.search-bar-group > .search-input {
     text-indent: 2em;
     border-radius: 2em;
-    margin-right:2em;
 }
 
 .cog-icon {
     font-size: 28px;
     color: #0c6dfd;
-
 }
 
 .avatar-images {
@@ -76,23 +28,19 @@ body {
     border-radius: 2em;
 }
 
-.follow-list-group-item {
-    padding-top: 0.15em;
-    padding-bottom: 0.15em;
-    font-weight: bolder;
-}
-
-.follow-name-handle {
-    margin-left: 1em;
-    margin-right: 1em;
-    font-weight: bolder;
-}
-
-.page-handle {
-    font-weight: normal;
-}
-
 .btn-follow {
     border-radius: 2em;
 }
 
+.image-text-overlay {
+    left: 0.25em;
+    color:white;
+    bottom: 0.15em;
+}
+
+.story-images {
+    max-width: 6em;
+    max-height: 6em;
+    border-radius: 1em;
+    min-height: 0;
+}
