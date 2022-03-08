@@ -3,6 +3,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './components/Tuiter/ExploreScreen/explore.css';
 import './components/Tuiter/HomeScreen/home.css';
+import './index.css'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
