@@ -50,9 +50,9 @@ const PostItem = ({tuit}) => {
                     {tuit.storyCaption !== "" && <p className="text-muted mb-1"> {tuit.storyCaption}</p>}
                     {tuit.storyCaption === "" && ''}
 
-
                     {tuit.siteLink !== "" && <span className="mb-2"> <i className="fas fa-link"></i> {tuit.siteLink} </span>}
                     {tuit.siteLink === "" && ''}
+                    
 
                 </div>
                 <div className="d-flex d-row mb-2 ms-2">
