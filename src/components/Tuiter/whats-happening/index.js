@@ -15,7 +15,7 @@ const WhatsHappening = () => {
     return (
         <div className="d-flex justify-content-start">
             <div className="d-flex flex-column mt-2">
-                <img className="image-prof me-0" src="../tuiter/images/elonprofpic.jpg"/>
+                <img className="image-prof me-0" src="../tuiter/images/profilemale1.jpg"/>
             </div>
 
             <div className="d-flex flex-column flex-grow-1">
