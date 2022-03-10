@@ -11,19 +11,29 @@ import HelloWorld from "./components/Labs/HelloWorld"
 import Labs from './components/Labs';
 import ExploreScreen from './components/Tuiter/ExploreScreen/ExploreScreen';
 import HomeScreen from './components/Tuiter/HomeScreen/HomeScreen';
+import who from "./reducers/who";
+import tuits from "./reducers/tuits"
+import {combineReducers,createStore} from "redux";
+import {Provider} from "react-redux"
+
+const reducers = combineReducers({who, tuits});
+const store = createStore(reducers);
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='container'>
-        <Routes>
-          <Route path="/hello" exact={true} element={<HelloWorld/>}/>
-          <Route path="/" exact={true} element={<Labs/>}/>
-          <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
-          <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <div className='container'>
+          <Routes>
+            <Route path="/hello" exact={true} element={<HelloWorld/>}/>
+            <Route path="/" exact={true} element={<Labs/>}/>
+            <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
+            <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </Provider>
+
   );
 }
 export default App;

@@ -37,3 +37,8 @@
 .no-link-decor > a {
     text-decoration: none;
 }
+
+.text-area-custom {
+    color: white;
+    background-color: black;
+}
