@@ -1,0 +1,23 @@
+.pro-pics{
+    position:relative;
+}
+
+.banner-pic {
+    position:relative;
+    max-height: 17em;
+    min-height: 17em;
+    padding: 0;
+}
+.avatar-pic {
+    width: 8em;
+    position:absolute;
+    left: 1em;
+    top: 12.75em;
+    padding: 0;
+    border: 0.5em solid black;
+    border-radius: 50%;
+}
+
+.edit-prof-btn{
+    float:right;
+}

@@ -1,0 +1,55 @@
+import React from "react";
+import { useSelector } from "react-redux";
+
+const profileInf = (state) => state.ProfileInfo;
+
+const ProfileComponent = () => {
+    const theInfo = useSelector(profileInf);
+    return(
+        <div>
+            <div className="row">
+                <div className="col-1 align-self-center me-4 ms-3">
+                    <span><i className="fas fa-arrow-left"></i></span>
+                </div>
+                <div className="col">
+                    <div class="row fw-bolder h5 mb-0">
+                        {theInfo.firstName + " " + theInfo.lastName}
+                        
+                    </div>
+                    <div class="row text-muted">
+                        {theInfo.numTuits} Tuits
+                    </div>
+                </div>
+            </div>
+            <div className="row mt-2 pro-pics">
+                <img className="banner-pic" src={theInfo.bannerPicture}></img>
+                <img className="avatar-pic" src={theInfo.profilePicture}></img>
+                
+            </div>
+
+            <button type="button" className="btn border border-secondary rounded-pill mt-2 fw-bolder text-white edit-prof-btn">Edit Profile</button>
+
+            <div className="row mt-5 pt-3 ms-2 fw-bolder h5 mb-0">
+                {theInfo.firstName + " " + theInfo.lastName}
+            </div>
+            <div className="row ms-2 text-muted pt-0">
+                @{theInfo.handle}
+            </div>
+            <div className="row ms-2">
+                {theInfo.bio}
+            </div>
+            <div className="d-flex ms-2 text-muted">
+                <span className="me-3"><i class="fas fa-map-marker-alt me-1"></i>{theInfo.location}</span>
+                <span className="me-3"><i class="fas fa-birthday-cake me-1"></i>Born {theInfo.dateOfBirth}</span>
+                <span className="me-3"><i class="fas fa-calendar-alt me-1"></i>Joined {theInfo.dateJoined}</span>
+            </div>
+            <div className="d-flex ms-2">
+                <span className="me-3 fw-bolder"> {theInfo.followingCount} <span className="text-muted fw-normal">Following</span></span>
+                <span className="fw-bolder">{theInfo.followersCount} <span className="text-muted fw-normal">Followers</span></span>
+            </div>
+        </div>
+
+    )
+}
+
+export default ProfileComponent;

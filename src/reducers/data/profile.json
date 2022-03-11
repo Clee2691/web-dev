@@ -1,0 +1,16 @@
+{
+    "firstName": "Calvin",
+    "numTuits": 5194,
+    "lastName": "Lee",
+    "handle": "clee",
+    "profilePicture": "../tuiter/images/profilemale1.jpg",
+    "bannerPicture": "../tuiter/images/storypic4.jpeg",
+    "bio": "Aspiring software engineer who likes to build anything and everything!",
+    "website": "tcngfit.com",
+    "location": "Boston, MA",
+    "dateOfBirth": "November 11, 1990",
+    "dateJoined": "March 2022",
+    "followingCount": 145,
+    "followersCount": 958
+    
+}
