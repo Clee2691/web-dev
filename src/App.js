@@ -10,7 +10,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {combineReducers,createStore} from "redux";
 import {Provider} from "react-redux"
 
-
 // The pages
 import HelloWorld from "./components/Labs/HelloWorld"
 import Labs from './components/Labs';

@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import ProfileComponent from "./ProfileComponent";
+import PostSummaryList from "../PostSummaryList";
 
 const ProfileScreen = () => {
     return (
@@ -12,6 +13,10 @@ const ProfileScreen = () => {
 
             <div className="col">
                 <ProfileComponent/>
+            </div>
+
+            <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+                <PostSummaryList title="What's Happening"/>
             </div>
 
         </div>

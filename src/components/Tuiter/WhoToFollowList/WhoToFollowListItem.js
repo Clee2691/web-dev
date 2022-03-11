@@ -10,14 +10,14 @@ const WhoToFollowListItem = ({
     
 }) => {
     return (
-    <div class="list-group-item border border-color-gray">
-        <div class="d-flex flex-row justify-content-start">
+    <div className="list-group-item border border-color-gray">
+        <div className="d-flex flex-row justify-content-start">
             <div>
                 <img className="avatar-images" src={who.avatarIcon} width="48"/>
             </div>
-            <div class="ms-2 me-2 fw-bold">
+            <div className="ms-2 me-2 fw-bold">
                 {who.userName} <span className="fas fa-check-circle"></span><br/>
-                <div class="fw-normal">
+                <div className="fw-normal">
                     @{who.handle}
                 </div>
             </div>

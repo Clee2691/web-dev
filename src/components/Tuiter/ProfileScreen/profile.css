@@ -21,3 +21,35 @@
 .edit-prof-btn{
     float:right;
 }
+
+.save-prof-btn {
+    background-color: white;
+    float:right;
+}
+
+.edit-banner-icons {
+    position:absolute;
+    left: 40%;
+    top: 50%;
+    color:white;
+}
+
+.edit-prof-pic-icon {
+    position:absolute;
+    left: 3.75em;
+    top: 15.75em;
+    color:white;
+}
+
+.lower-brightness {
+    filter: brightness(50%)
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.edit-prof-form{
+    margin-top: 4em;
+    border: 2px solid #222222;
+}
