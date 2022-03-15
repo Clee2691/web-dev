@@ -11,7 +11,7 @@ const data = [
     },
 ]
 
-const todos = (state=data, action) => {
+const todosReducer = (state=data, action) => {
     switch (action.type) {
         case 'update-todo':
             const newTodos = state.map(todo => {
@@ -35,4 +35,4 @@ const todos = (state=data, action) => {
     }
 }
 
-export default todos;
+export default todosReducer;

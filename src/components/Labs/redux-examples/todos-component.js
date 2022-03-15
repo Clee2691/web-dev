@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const Todos = () => {
-    const todos = useSelector(state => state.todos);
+    const todos = useSelector(state => state.todosReducer);
     const [todo, setTodo] = useState({ do: '', done: false });
     const dispatch = useDispatch();
 

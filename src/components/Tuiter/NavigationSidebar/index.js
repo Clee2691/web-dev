@@ -11,7 +11,7 @@ const NavigationSidebar = ({
                     <i className="fab fa-twitter"></i>
                 </Link>
             
-                <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active': ''}`}>
+                <Link to="/tuiter" className={`list-group-item ${active === 'home' ? 'active': ''}`}>
                     <span><i className="fas fa-home left-nav-icon"></i>
                     <span className="d-none d-xl-inline"> Home</span>
                     </span>
