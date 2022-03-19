@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
-const PostItem = ({tuit}) => {
+const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
 
     const likeClickHandler = () => {
@@ -76,4 +76,4 @@ const PostItem = ({tuit}) => {
     );
 }
 
-export default PostItem;
+export default TuitListItem;

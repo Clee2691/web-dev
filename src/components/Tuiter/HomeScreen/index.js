@@ -1,15 +1,13 @@
 import React from "react";
 
-
-import PostList from "../PostList";
+import TuitList from "../tuit-list"
 import WhatsHappening from "../whats-happening";
 
 const HomeScreen = () => {
-
     return (
         <div className="col">
             <WhatsHappening/>
-            <PostList/>
+            <TuitList/>
         </div>
     )
 }
