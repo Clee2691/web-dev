@@ -1,11 +1,18 @@
-import initialState from "./data/tuits.json"
+import { FIND_ALL_TUITS, DELETE_TUIT, CREATE_TUIT, UPDATE_TUIT } from "../actions/tuits-actions";
 
-const tuits = (state = initialState, action) => {
+const tuits = (state = [], action) => {
     switch (action.type) {
+        case FIND_ALL_TUITS:
+            return action.tuits;
+        case UPDATE_TUIT:
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                  action.tuit : tuit);
+         
         case 'like-tuit':
             return state.map(tuit => {
                 if (tuit._id === action.tuit._id) {
-                    if (tuit.liked == true) {
+                    if (tuit.liked === true) {
                         tuit.liked = false;
                         tuit.numLikes--;
                     } else {
@@ -17,31 +24,13 @@ const tuits = (state = initialState, action) => {
                     return tuit;
                 }
             });
-        case 'delete-tuit':
+        case DELETE_TUIT:
             return state.filter(tuit => tuit._id !== action.tuit._id);
-        case 'create-tuit':
-            const tuit = {
-                "_id": (new Date()).getTime() + '',
-                "topic": "Web Development",
-                "userName": "ReactJS",
-                "verified": false,
-                "handle": "ReactJS",
-                "time": "2h",
-                "siteLink": "",
-                "storyCaption": "",
-                "storyTitle": "",
-                "caption": action.tuit,
-                "avatarImage": "../tuiter/images/reactjs.png",
-                "storyImage": "../tuiter/images/reactjs.png",
-                "numComments" :123,
-                "numShares": 456,
-                "numLikes": 789,
-            };
-            return ([
-                    tuit,
+        case CREATE_TUIT:
+            return [
+                    action.newTuit,
                     ...state,
                 ]
-            );
         default:
             return(state);
     }
