@@ -7,18 +7,15 @@ export const DELETE_TUIT = 'DELETE_TUIT';
 
 export const createTuit = async (dispatch, tuit) => {
     const createdTuit = {
-        "_id": (new Date()).getTime() + '',
-        "topic": "Web Development",
+        "avatarImage": "../tuiter/images/reactjs.png",
         "userName": "ReactJS",
-        "verified": false,
         "handle": "ReactJS",
         "time": "2h",
-        "siteLink": "",
-        "storyCaption": "",
-        "storyTitle": "",
         "caption": tuit,
-        "avatarImage": "../tuiter/images/reactjs.png",
         "storyImage": "../tuiter/images/reactjs.png",
+        "storyTitle": "",
+        "storyCaption": "",
+        "siteLink": "",
         "numComments" :123,
         "numShares": 456,
         "numLikes": 789,
